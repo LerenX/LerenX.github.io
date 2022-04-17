@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(242, 253, 138);
+    text-align: center;
+}
+
+h2 h1 {
+    font-family: 'Trebuchet MS';
+}
+
+.nameButton {
+	box-shadow:inset 0px 1px 0px 0px #7a8eb9;
+	border:1px solid black;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+}
+
+.nameButton:active {
+	position:relative;
+	top:1px;
+}

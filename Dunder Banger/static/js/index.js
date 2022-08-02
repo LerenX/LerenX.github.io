@@ -104,11 +104,11 @@ randomButton.addEventListener('click', function onClick(event) {
 });
 
 function store(e) {
-    localStorage.setItem('local', JSON.stringify(e));
+    sessionStorage.setItem('local', JSON.stringify(e));
 }
 
-if (localStorage.getItem('local') !== null) {
-    coins = JSON.parse(localStorage.getItem('local'));
+if (sessionStorage.getItem('local') !== null) {
+    coins = JSON.parse(sessionStorage.getItem('local'));
     // console.log(coins);
 }
 
@@ -123,7 +123,7 @@ function refreshCoins() {
 refreshCoins();
 
 clearButton.addEventListener("click", function onClick(event) {
-    localStorage.clear();
+    sessionStorage.clear();
 });
 
 buyButton.addEventListener('click', function onClick(event) {

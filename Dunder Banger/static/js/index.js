@@ -172,6 +172,8 @@ personButton.addEventListener('click', function onClick(event) {
         randomPerson = '';
     }
 
+    person = randomPerson;
+
     if (Math.random() * 100 < passInput) {
         hitNum = 'Pass'
         document.getElementById('output').innerHTML = (randomPerson + ' ' + String(hitNum));
@@ -192,7 +194,7 @@ personButton.addEventListener('click', function onClick(event) {
     }
 
     if (hitNum != "Pass") {
-        coins[String(randomPerson).toLowerCase()] += hitNum;
+        coins[String(person).toLowerCase()] += hitNum;
         store(coins);
     }
 

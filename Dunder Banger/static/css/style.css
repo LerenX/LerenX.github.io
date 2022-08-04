@@ -1,10 +1,10 @@
 body {
-    background-color: rgb(242, 253, 138);
+    background-color: rgb(0, 145, 145);
     text-align: center;
 }
 
 h2 h1 {
-    font-family: 'Trebuchet MS';
+    font-family: 'Calibri';
 }
 
 .nameButton {
@@ -26,6 +26,12 @@ h2 h1 {
 }
 
 .text {
-	font-family: "Trebuchet MS";
+	font-family: 'Calibri';
 	font-size: larger;
+	color: white;
+}
+
+h3 {
+	color: whitesmoke;
+	font-family: 'Calibri';
 }

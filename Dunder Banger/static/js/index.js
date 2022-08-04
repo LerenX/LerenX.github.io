@@ -30,7 +30,7 @@ nicolasButton.addEventListener('click', function onClick(event) {
     k = 0;
 
     if (backgroundColor === 'red') {
-        nicolasButton.style.backgroundColor = 'green';
+        nicolasButton.style.backgroundColor = "#0066CC";
         nicolas = 'Nicolas';
     } else {
         nicolasButton.style.backgroundColor = 'red';
@@ -43,7 +43,7 @@ ericButton.addEventListener('click', function onClick(event) {
     k = 0;
 
     if (backgroundColor === 'red') {
-        ericButton.style.backgroundColor = 'green';
+        ericButton.style.backgroundColor = "#0066CC";
         eric = 'Eric';
     } else {
         ericButton.style.backgroundColor = 'red';
@@ -56,7 +56,7 @@ andreasButton.addEventListener('click', function onClick(event) {
     k = 0;
 
     if (backgroundColor === 'red') {
-        andreasButton.style.backgroundColor = 'green';
+        andreasButton.style.backgroundColor = "#0066CC";
         andreas = 'Andreas';
     } else {
         andreasButton.style.backgroundColor = 'red';
@@ -69,7 +69,7 @@ gustavButton.addEventListener('click', function onClick(event) {
     k = 0;
 
     if (backgroundColor === 'red') {
-        gustavButton.style.backgroundColor = 'green';
+        gustavButton.style.backgroundColor = "#0066CC";
         gustav = 'Gustav';
     } else {
         gustavButton.style.backgroundColor = 'red';
@@ -82,7 +82,7 @@ oscarButton.addEventListener('click', function onClick(event) {
     k = 0;
 
     if (backgroundColor === 'red') {
-        oscarButton.style.backgroundColor = 'green';
+        oscarButton.style.backgroundColor = "#0066CC";
         oscar = 'Oscar';
     } else {
         oscarButton.style.backgroundColor = 'red';
@@ -95,7 +95,7 @@ randomButton.addEventListener('click', function onClick(event) {
     k = 0;
 
     if (backgroundColor === 'red') {
-        randomButton.style.backgroundColor = 'green';
+        randomButton.style.backgroundColor = "#0066CC";
         rand = true;
     } else {
         randomButton.style.backgroundColor = 'red';
@@ -137,8 +137,11 @@ buyButton.addEventListener('click', function onClick(event) {
 
 challengeButton.addEventListener('click', function onClick(event) {
     challengePerson = String(document.getElementById('buyPerson').value);
+    challengeAmount = parseInt(document.getElementById('challengeAmount').value);
     if (typeof coins[challengePerson.toLowerCase()] != 'undefined') {
-        coins[challengePerson.toLowerCase()] -= 100;
+        if (Number.isInteger(challengeAmount)) {
+            coins[challengePerson.toLowerCase()] -= challengeAmount;
+        }
     }
     refreshCoins();
 });
@@ -199,5 +202,5 @@ personButton.addEventListener('click', function onClick(event) {
     }
 
     // console.log(minInput, maxInput, passInput, multiplier, hitNum);
-    refreshCoins();
+    refreshCoins(); 
 });

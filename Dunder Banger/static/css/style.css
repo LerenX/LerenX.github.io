@@ -5,6 +5,7 @@ body {
 
 h2 h1 {
     font-family: 'Calibri';
+	color: white;
 }
 
 .nameButton {
@@ -34,4 +35,8 @@ h2 h1 {
 h3 {
 	color: whitesmoke;
 	font-family: 'Calibri';
+}
+
+.coins {
+	margin: 6%;
 }

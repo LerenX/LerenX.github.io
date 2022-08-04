@@ -3,11 +3,6 @@ body {
     text-align: center;
 }
 
-h2 h1 {
-    font-family: 'Calibri';
-	color: white;
-}
-
 .nameButton {
 	box-shadow:inset 0px 1px 0px 0px #7a8eb9;
 	border:1px solid black;
@@ -33,6 +28,11 @@ h2 h1 {
 }
 
 h3 {
+	color: whitesmoke;
+	font-family: 'Calibri';
+}
+
+h1 {
 	color: whitesmoke;
 	font-family: 'Calibri';
 }
